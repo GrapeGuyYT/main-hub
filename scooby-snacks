@@ -1,0 +1,26 @@
+v = 0.1
+print("Loading pringleHub v"..tostring(v))
+sG = Instance.new("ScreenGui", game.Players.LocalPlayer)
+mF = Instance.new("Frame", sG)
+mF.AnchorPoint = Vector2.new(0.5, 0.5)
+mF.Size = UDim2.new(0.3, 0, 0.3, 0)
+mF.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+uiGrid = Instance.new("UIGridLayout", mF)
+pl = Instance.new("ImageLabel", mF)
+pl.ImageId = "rbxassetid://6332802250"
+lth = Instance.new("TextLabel", mF)
+lth.Text = "pringleHub v"..tostring(v)
+lth.BackgroundTransparency = 0.5
+lth.TextScaled = true
+s = Instance.new("Sound", sG)
+s.SoundId = "rbxassetid://9126113891"
+-- main scripts.
+BalloonButton = Instance.new("TextButton", mF)
+BalloonButton.BackgroundTransparency = 0.5
+BalloonButton.TextScaled = true
+BalloonButton.Text = "Balloon Script v.1
+BalloonButton.MouseButton1Click:Connect(function()
+BalloonButton.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+	print("Loading Balloon Script v.1")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GrapeGuyYT/cool-balloon/main/main"))()
+end)
